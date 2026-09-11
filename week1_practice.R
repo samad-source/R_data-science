@@ -39,4 +39,4 @@ sample(1:20, 5)
 # Logical functions
 all(c(TRUE, TRUE, TRUE))
 any(c(FALSE, FALSE, TRUE))
-
+name = "Azeez"
