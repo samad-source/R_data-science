@@ -40,3 +40,4 @@ sample(1:20, 5)
 all(c(TRUE, TRUE, TRUE))
 any(c(FALSE, FALSE, TRUE))
 name = "Azeez"
+department = "data science"

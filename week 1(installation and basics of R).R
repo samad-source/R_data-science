@@ -1,4 +1,4 @@
-# To get the dtrectory you are currently in use
+# To get the directory you are currently in use
 getwd()
 
 # To set up a directory when workong on new project use
@@ -40,7 +40,7 @@ x <- 10 # it store the value 10 in an object call x
 1 : 10 # (:) is important in sequence
 seq(1,10,2) # seq(from =1, to = 10 , by =2)
 
-# Reptition with rep()
+# Repitition with rep()
 rep(5,4) # rep(5 = value, 4 = the repeated time)
 rep(1:10,2) #rep(1:3 = 1 to 3,2 = repeated time)
 
