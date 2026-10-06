@@ -22,6 +22,15 @@ str(iris)
 summary(iris)
 
                            # 2. Data Visualisation:
+# 1. Create a pair plot (scatterplot matrix)
 pairs(iris[1:4],
-      col = as.integer(iris$Species),
-      pch = 19)
+      main = "Iris Data (red=setosa,green=versicolor,blue=virginica)",
+      bg = c("red","green3","blue")[unclass(iris$Species)],
+      pch = 21)
+
+# 2. "Use boxplots to visualise the distribution of each feature across the three species.
+boxplot(iris$Sepal.Length)
+# How is Sepal Length distributed for each species?
+boxplot(Sepal.Length ~ Species ,data = iris)
+# to check for median individually
+median(iris$Sepal.Length[iris$Species == "virginica"])
