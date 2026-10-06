@@ -30,7 +30,34 @@ pairs(iris[1:4],
 
 # 2. "Use boxplots to visualise the distribution of each feature across the three species.
 boxplot(iris$Sepal.Length)
-# How is Sepal Length distributed for each species?
+# Sepal Length distributed for each species
 boxplot(Sepal.Length ~ Species ,data = iris)
+
+# Sepal Width distributed for each species
+boxplot(Sepal.Width ~ Species ,data = iris)
+
+# Petal Length distributed for each species
+boxplot(Petal.Length ~ Species ,data = iris)
+
+#Petal Width distributed for each species
+boxplot(Petal.Width ~ Species ,data = iris)
 # to check for median individually
 median(iris$Sepal.Length[iris$Species == "virginica"])
+
+# Generate histograms for the numerical variables such as sepal length, sepal width, etc.
+hist(iris$Sepal.Length,main = "Histogram of Sepal Length")
+hist(iris$Sepal.Width,main = "Histogram of Sepal Width")
+hist(iris$Petal.Length,main = "Histogram of Petal Length")
+hist(iris$Petal.Width,main = "Histogram of Petal Width")
+
+# Implement at least one other plot of your choice that helps visualise the data.
+plot(
+  iris$Petal.Length,
+  iris$Petal.Width,
+  col = as.integer(iris$Species),
+  main = "PETAL(LENGTH vs WIDTH)",
+  xlab = "PETAL LENGTH",
+  ylab = "PETAL WIDTH",
+  pch = 19
+)
+plot(iris$Petal.Length, iris$Petal.Width)
