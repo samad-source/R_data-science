@@ -60,4 +60,18 @@ plot(
   ylab = "PETAL WIDTH",
   pch = 19
 )
-plot(iris$Petal.Length, iris$Petal.Width)
+
+              #3. Statistical Summary and Insights
+# calculating the mean(average) of Sepal.Length,Sepal.Width,Petal.Length,Petal.Width
+mean(iris$Sepal.Length)
+mean(iris$Sepal.Width)
+mean(iris$Petal.Length)
+mean(iris$Petal.Width)
+
+# calculating the average Sepal.Length,Sepal.Width,Petal.Length,Petal.Width
+median(iris$Sepal.Length)
+median(iris$Sepal.Width)
+median(iris$Petal.Length)
+median(iris$Petal.Width)
+
+# calculating the average Sepal.Length,Sepal.Width,Petal.Length,Petal.Width
