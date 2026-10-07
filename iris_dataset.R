@@ -117,10 +117,29 @@ length(train_y)
 length(test_y)
 
 # creating a prediction
-prediction <- knn(
+predictions <- knn(
   train = train_x,
   test = test_x,
   cl = train_y,
   k = 5
 )
-length(prediction)
+
+# Evaluate the accuracy of your model on the test set and display the confusion matrix.
+accuracy <- mean(predictions == test_y)
+accuracy
+
+con_matrix <- table(Actual = test_y,Predicted = predictions) # confusion matrix
+
+# creating graphical representation for confusion matrix
+cm_data <- as.data.frame(con_matrix)
+
+ggplot(cm_data, aes(x = Predicted, y = Actual, fill = Freq)) +
+  geom_tile() +
+  geom_text(aes(label = Freq), size = 4) +
+  labs(
+    title = "Confusion Matrix",
+    x = "Predicted Species",
+    y = "Actual Species",
+    fill = "Count"
+  ) +
+  theme_minimal()
