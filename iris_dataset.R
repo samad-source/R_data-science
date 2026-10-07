@@ -107,3 +107,20 @@ train_y <- train_data$Species # make the species an answer
 # creating the testing features
 test_x <- test_data[,1:4]
 test_y <- test_data$Species
+
+# Checking the dimension for both training and testing clues
+dim(train_x)
+dim(test_x)
+
+#  Checking the no's for both training and testing clues
+length(train_y)
+length(test_y)
+
+# creating a prediction
+prediction <- knn(
+  train = train_x,
+  test = test_x,
+  cl = train_y,
+  k = 5
+)
+length(prediction)
