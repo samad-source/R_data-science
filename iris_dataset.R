@@ -68,10 +68,19 @@ mean(iris$Sepal.Width)
 mean(iris$Petal.Length)
 mean(iris$Petal.Width)
 
-# calculating the average Sepal.Length,Sepal.Width,Petal.Length,Petal.Width
+# calculating the median of Sepal.Length,Sepal.Width,Petal.Length,Petal.Width
 median(iris$Sepal.Length)
 median(iris$Sepal.Width)
 median(iris$Petal.Length)
 median(iris$Petal.Width)
 
-# calculating the average Sepal.Length,Sepal.Width,Petal.Length,Petal.Width
+# calculating the standard deviation of Sepal.Length,Sepal.Width,Petal.Length,Petal.Width
+sd(iris$Sepal.Length)
+sd(iris$Sepal.Width)
+sd(iris$Petal.Length)
+sd(iris$Petal.Width)
+
+                 # 4. Simple Classification Model
+install.packages("class") #install package for classification
+library("class") # load the package
+
