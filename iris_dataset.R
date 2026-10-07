@@ -97,7 +97,7 @@ train_data
 test_data <- iris[- train_index,]
 
 nrow(train_data) # check the no's of row in the train dataset
-nrow(test_data) # # check the no's of row in the test dataset
+nrow(test_data)  # check the no's of row in the test dataset
 nrow(train_data) + nrow(test_data) # total no's of the entire dataset
 
 # creating the training features
