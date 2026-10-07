@@ -88,3 +88,10 @@ library("class") # load the package
 # creating a training index
 train_index <- sample(1:nrow(iris),0.7 * nrow(iris))
 length(train_index) # to check the number of the training dataset
+
+# Creating the training dataset
+train_data <- iris[train_index,]
+train_data
+
+# Creating the test dataset
+test_data <- iris[- train_index,]
