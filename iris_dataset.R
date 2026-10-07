@@ -95,3 +95,10 @@ train_data
 
 # Creating the test dataset
 test_data <- iris[- train_index,]
+
+nrow(train_data) # check the no's of row in the train dataset
+nrow(test_data) # # check the no's of row in the test dataset
+nrow(train_data) + nrow(test_data) # total no's of the entire dataset
+
+x <- train_data[,1:4] # make the measurement a clues
+y <- iris$Species # make the species an answer
