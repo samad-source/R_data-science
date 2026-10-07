@@ -82,5 +82,9 @@ sd(iris$Petal.Width)
 
                  # 4. Simple Classification Model
 install.packages("class") #install package for classification
+set.seed(123) #locks randomness so that code will not always produces the exact same results.
 library("class") # load the package
 
+# creating a training index
+train_index <- sample(1:nrow(iris),0.7 * nrow(iris))
+length(train_index) # to check the number of the training dataset
