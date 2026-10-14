@@ -15,4 +15,22 @@ names <- c('id_number', 'diagnosis', 'radius_mean',
            'concavity_worst', 'concave_points_worst', 
            'symmetry_worst', 'fractal_dimension_worst')
 breast_cancer <- read.csv("wdbc.data",col.names = names,header = FALSE)
-brea
+
+breast_cancer$id_number <- NULL
+breast_cancer
+
+# check dimension
+dim(breast_cancer)
+
+# check data types
+str(breast_cancer)
+ # check class imbalance
+breast_cancer %>%
+  count(diagnosis) %>%
+  group_by(diagnosis) %>%
+  #summarize(perc_dx = round((n / 569)* 100, 2)) %>%
+  mutate(perc_dx = round((n / 569)* 100, 2))
+
+# summarize 
+summary(breast_cancer)
+
