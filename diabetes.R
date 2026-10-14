@@ -34,3 +34,7 @@ breast_cancer %>%
 # summarize 
 summary(breast_cancer)
 
+pairs(breast_cancer[3:8],
+      bg = c("green3","blue")[unclass(breast_cancer$diagnosis)],
+      main = "plot",
+      pch = 21)
