@@ -38,3 +38,16 @@ pairs(breast_cancer[3:8],
       bg = c("green3","blue")[unclass(breast_cancer$diagnosis)],
       main = "plot",
       pch = 21)
+
+# 1. Get the frequency table
+diagnosis_counts <- table(breast_cancer$diagnosis)
+
+# 2. Create labels with percentages
+labels <- paste0(names(diagnosis_counts), " (", 
+                 round(100 * diagnosis_counts / sum(diagnosis_counts), 1), "%)")
+
+# 3. Plot the pie chart
+pie(diagnosis_counts, 
+    labels = labels, 
+    col = c("green3", "blue"), 
+    main = "Breast Cancer Diagnosis Occurrences")
