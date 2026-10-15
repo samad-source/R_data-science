@@ -28,6 +28,11 @@ pairs(iris[1:4],
       bg = c("red","green3","blue")[unclass(iris$Species)],
       pch = 21)
 
+pairs(iris[1:4],
+  main = "iris",
+  bg = c("red","brown","blue"[unclass(iris$Species)]),
+  pch = 21
+)
 # 2. "Use boxplots to visualise the distribution of each feature across the three species.
 boxplot(iris$Sepal.Length)
 # Sepal Length distributed for each species
