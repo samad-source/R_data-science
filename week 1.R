@@ -19,7 +19,7 @@ setwd()
 # R follows the BODMAS order of arithmethic operation
 
 # Mathematical constant in R 
-pi()
+pi
 round(pi,2) # round to a specific number of decimal places 
 ceiling(pi) # rounds upward to the nearest integer ceiling
 floor(pi) # rounds downward to the next integer
@@ -27,7 +27,8 @@ floor(pi) # rounds downward to the next integer
 # COMPLEX NUMBER : IT HAS A FORM (a + bi)
 # Where (a = real part),(b = imaginary coefficient), (i = root -1)
 # it identifies 
-Arg(),Conj()
+Arg()
+Conj()
 ??complexnumber
 
 # To convert float to integer in R use
